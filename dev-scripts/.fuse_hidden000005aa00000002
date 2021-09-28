@@ -1,0 +1,140 @@
+[31m✖[39m [90m｢wdm｣[39m: assets by status 4.73 MiB [1m[32m[cached][39m[22m 1 asset
+assets by path [1m[32m*.js[39m[22m 12.3 MiB
+  asset [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+  asset [1m[32mmain.de8552a21767510da1cc.hot-update.js[39m[22m 5.3 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+asset [1m[32mindex.html[39m[22m 996 bytes [1m[32m[emitted][39m[22m
+asset [1m[32mmain.de8552a21767510da1cc.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+Entrypoint [1mmain[39m[22m 17 MiB (13.5 MiB) = [1m[32mmain.css[39m[22m 4.73 MiB [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32mmain.de8552a21767510da1cc.hot-update.js[39m[22m 5.3 KiB 3 auxiliary assets
+cached modules 11.5 MiB (javascript) 4.73 MiB (css/mini-extract) [1m[32m[cached][39m[22m 971 modules
+runtime modules 29.6 KiB 15 modules
+[1m./app/src/core/routes.jsx[39m[22m 1.72 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./app/src/core/routes.jsx[39m[22m [1m[32m13:0-46[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'[39m[22m
+resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'
+  using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core/pages/ActList/actlist)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.js doesn't exist[39m[22m
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.jsx doesn't exist[39m[22m
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.json doesn't exist[39m[22m
+      as directory
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+webpack 5.38.1 compiled with [1m[31m1 error[39m[22m in 15208 ms
+[31m✖[39m [90m｢wdm｣[39m: assets by status 4.73 MiB [1m[32m[cached][39m[22m 1 asset
+assets by path [1m[32m*.js[39m[22m 12.3 MiB
+  asset [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+  asset [1m[32mmain.b734774ab49f2b40f265.hot-update.js[39m[22m 6.89 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+asset [1m[32mindex.html[39m[22m 996 bytes [1m[32m[emitted][39m[22m
+asset [1m[32mmain.b734774ab49f2b40f265.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+Entrypoint [1mmain[39m[22m 17 MiB (13.6 MiB) = [1m[32mmain.css[39m[22m 4.73 MiB [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32mmain.b734774ab49f2b40f265.hot-update.js[39m[22m 6.89 KiB 3 auxiliary assets
+cached modules 11.5 MiB (javascript) 4.73 MiB (css/mini-extract) [1m[32m[cached][39m[22m 971 modules
+runtime modules 29.6 KiB 15 modules
+[1m./app/src/pages/search/SearchForm.jsx[39m[22m 4.61 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./app/src/core/routes.jsx[39m[22m [1m[32m13:0-46[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'[39m[22m
+resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'
+  using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core/pages/ActList/actlist)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.js doesn't exist[39m[22m
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.jsx doesn't exist[39m[22m
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.json doesn't exist[39m[22m
+      as directory
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+webpack 5.38.1 compiled with [1m[31m1 error[39m[22m in 6308 ms
+[31m✖[39m [90m｢wdm｣[39m: assets by status 4.73 MiB [1m[32m[cached][39m[22m 1 asset
+assets by path [1m[32m*.js[39m[22m 12.3 MiB
+  asset [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+  asset [1m[32mmain.6e725aef539d7f6fbb73.hot-update.js[39m[22m 7.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+asset [1m[32mindex.html[39m[22m 996 bytes [1m[32m[emitted][39m[22m
+asset [1m[32mmain.6e725aef539d7f6fbb73.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+Entrypoint [1mmain[39m[22m 17 MiB (13.6 MiB) = [1m[32mmain.css[39m[22m 4.73 MiB [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32mmain.6e725aef539d7f6fbb73.hot-update.js[39m[22m 7.2 KiB 3 auxiliary assets
+cached modules 11.5 MiB (javascript) 4.73 MiB (css/mini-extract) [1m[32m[cached][39m[22m 971 modules
+runtime modules 29.6 KiB 15 modules
+[1m./app/src/pages/search/SearchForm.jsx[39m[22m 4.67 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./app/src/core/routes.jsx[39m[22m [1m[32m13:0-46[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'[39m[22m
+resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'
+  using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core/pages/ActList/actlist)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.js doesn't exist[39m[22m
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.jsx doesn't exist[39m[22m
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.json doesn't exist[39m[22m
+      as directory
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+webpack 5.38.1 compiled with [1m[31m1 error[39m[22m in 108397 ms
+[31m✖[39m [90m｢wdm｣[39m: assets by status 4.73 MiB [1m[32m[cached][39m[22m 1 asset
+assets by path [1m[32m*.js[39m[22m 12.3 MiB
+  asset [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+  asset [1m[32mmain.5aa4210d018c7ca637ff.hot-update.js[39m[22m 7.2 KiB [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m (name: main) 1 related asset
+asset [1m[32mindex.html[39m[22m 996 bytes [1m[32m[emitted][39m[22m
+asset [1m[32mmain.5aa4210d018c7ca637ff.hot-update.json[39m[22m 28 bytes [1m[32m[emitted][39m[22m [1m[32m[immutable][39m[22m [1m[32m[hmr][39m[22m
+Entrypoint [1mmain[39m[22m 17 MiB (13.6 MiB) = [1m[32mmain.css[39m[22m 4.73 MiB [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32mmain.5aa4210d018c7ca637ff.hot-update.js[39m[22m 7.2 KiB 3 auxiliary assets
+cached modules 11.5 MiB (javascript) 4.73 MiB (css/mini-extract) [1m[32m[cached][39m[22m 971 modules
+runtime modules 29.6 KiB 15 modules
+[1m./app/src/pages/search/SearchForm.jsx[39m[22m 4.68 KiB [1m[33m[built][39m[22m [1m[33m[code generated][39m[22m
+
+[1m[31mERROR[39m[22m in [1m./app/src/core/routes.jsx[39m[22m [1m[32m13:0-46[39m[22m
+[1mModule [1m[31mnot found[39m[22m[1m: [1m[31mError[39m[22m[1m: Can't resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'[39m[22m
+resolve './pages/ActList/actlist' in '/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core'
+  using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /media/namit/Kaku/OfflineData2021/legistquest_desktop/package.json (relative path: ./app/src/core/pages/ActList/actlist)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.js doesn't exist[39m[22m
+      .jsx
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.jsx doesn't exist[39m[22m
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist.json doesn't exist[39m[22m
+      as directory
+        [1m[31m/media/namit/Kaku/OfflineData2021/legistquest_desktop/app/src/core/pages/ActList/actlist doesn't exist[39m[22m
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+webpack 5.38.1 compiled with [1m[31m1 error[39m[22m in 15502 ms

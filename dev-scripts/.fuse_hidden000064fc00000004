@@ -1,0 +1,43 @@
+[33m⚠[39m [90m｢wdm｣[39m: asset [1m[32mbundle.js[39m[22m 12.3 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+asset [1m[32mmain.css[39m[22m 4.73 MiB [1m[32m[emitted][39m[22m (name: main) 1 related asset
+asset [1m[32mindex.html[39m[22m 996 bytes [1m[32m[emitted][39m[22m
+Entrypoint [1mmain[39m[22m 17 MiB (13.5 MiB) = [1m[32mmain.css[39m[22m 4.73 MiB [1m[32mbundle.js[39m[22m 12.3 MiB 2 auxiliary assets
+runtime modules 29.6 KiB 15 modules
+orphan modules 28.3 KiB [1m[33m[orphan][39m[22m 9 modules
+modules by path [1m./node_modules/[39m[22m 6.97 MiB (javascript) 30.1 KiB (css/mini-extract)
+  javascript modules 6.9 MiB 673 modules
+  json modules 75.5 KiB 11 modules
+  css modules 30.1 KiB 5 modules
+modules by path [1m./app/[39m[22m 4.46 MiB (javascript) 4.7 MiB (css/mini-extract)
+  modules by path [1m./app/src/[39m[22m 301 KiB (javascript) 130 bytes (css/mini-extract) 73 modules
+  modules by path [1m./app/assets/[39m[22m 4.03 MiB (javascript) 4.7 MiB (css/mini-extract) 38 modules
+  modules by path [1m./app/localization/*.js[39m[22m 3.57 KiB 2 modules
+  1 module
+optional modules 120 bytes [1m[33m[optional][39m[22m 8 modules
+8 modules
+
+[1m[33mWARNING[39m[22m in [1m./app/src/pages/actlist/ActList.jsx[39m[22m [1m[32m5:22-41[39m[22m
+[1mexport 'React' (imported as 'React') was [1m[31mnot found[39m[22m[1m in 'react' (possible exports: [1m[32mChildren, Component, Fragment, Profiler, PureComponent, StrictMode, Suspense, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED, cloneElement, createContext, createElement, createFactory, createRef, forwardRef, isValidElement, lazy, memo, useCallback, useContext, useDebugValue, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useReducer, useRef, useState, version[39m[22m[1m)[39m[22m
+ @ ./app/src/core/routes.jsx 13:0-47 41:17-24
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+[1m[33mWARNING[39m[22m in [1m./app/src/pages/actlist/ActList.jsx[39m[22m [1m[32m5:42-56[39m[22m
+[1mexport 'React' (imported as 'React') was [1m[31mnot found[39m[22m[1m in 'react' (possible exports: [1m[32mChildren, Component, Fragment, Profiler, PureComponent, StrictMode, Suspense, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED, cloneElement, createContext, createElement, createFactory, createRef, forwardRef, isValidElement, lazy, memo, useCallback, useContext, useDebugValue, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useReducer, useRef, useState, version[39m[22m[1m)[39m[22m
+ @ ./app/src/core/routes.jsx 13:0-47 41:17-24
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+[1m[33mWARNING[39m[22m in [1m./app/src/pages/actlist/ActList.jsx[39m[22m [1m[32m5:77-96[39m[22m
+[1mexport 'React' (imported as 'React') was [1m[31mnot found[39m[22m[1m in 'react' (possible exports: [1m[32mChildren, Component, Fragment, Profiler, PureComponent, StrictMode, Suspense, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED, cloneElement, createContext, createElement, createFactory, createRef, forwardRef, isValidElement, lazy, memo, useCallback, useContext, useDebugValue, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useReducer, useRef, useState, version[39m[22m[1m)[39m[22m
+ @ ./app/src/core/routes.jsx 13:0-47 41:17-24
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+[1m[33mWARNING[39m[22m in [1m./app/src/pages/actlist/ActList.jsx[39m[22m [1m[32m5:128-147[39m[22m
+[1mexport 'React' (imported as 'React') was [1m[31mnot found[39m[22m[1m in 'react' (possible exports: [1m[32mChildren, Component, Fragment, Profiler, PureComponent, StrictMode, Suspense, __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED, cloneElement, createContext, createElement, createFactory, createRef, forwardRef, isValidElement, lazy, memo, useCallback, useContext, useDebugValue, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useReducer, useRef, useState, version[39m[22m[1m)[39m[22m
+ @ ./app/src/core/routes.jsx 13:0-47 41:17-24
+ @ ./app/src/core/root.jsx 6:0-30 57:40-46
+ @ ./app/src/index.jsx 5:0-31 25:36-40
+
+webpack 5.38.1 compiled with [1m[33m4 warnings[39m[22m in 63734 ms

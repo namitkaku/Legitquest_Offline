@@ -1,0 +1,257 @@
+@media (max-width:1280px){
+  .notes-open .sidebar{
+    margin-left: -270px
+  }
+  .notes-open .back-to-result, .notes-open .judgement-topbar .btn-toolbar-top{
+    display: none
+  }
+}
+
+@media (max-width:992px)  {
+  #legalpowerlist-banner .close {
+    right: -7px;
+    top: -7px;
+    border-radius: 5px;
+}
+  .navbar-toggler:focus{
+    outline: none;
+  }
+  .offcanvas-collapse.open {
+    padding: 1rem 1.5rem!important;
+}
+.navbar-sm .navbar-nav > .nav-item {
+  margin-left: 0px;
+}
+.right-nav {
+  order: -1;
+  flex-direction: row;
+}
+.right-nav .nav-item{
+  flex: 1;
+  margin: 0px 4px;
+}
+.right-nav .nav-item .btn{
+  width: 100%; 
+}
+.user-navlink {
+  order: -1;
+  margin: 12px 0px;
+  border-bottom: 1px solid #e0e4e8;
+}
+  .judgment-section .sidebar ul li a.idraf-link span{
+    display: none;
+  }
+  .judgment-section .sidebar {
+    min-width: 270px;
+}
+  .notes-open .sidebar,.close-idraf .sidebar{
+    margin-left: -180px
+  }
+  aside.filter-sidebar {
+      position: absolute;
+      width: 330px;
+      z-index: 1;
+      margin-top: 30px;
+      height: calc(100% - 44px);
+      left: -330px;
+      transition: all ease-in-out 150ms;
+  }
+aside.filter-sidebar.show{
+  left: 0px
+}
+.navbar-sm .nav-link {
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    font-size: 1rem;
+}
+.navbar-nav .dropdown-menu {
+    margin-left: 0px !important;
+    width: 100% !important;
+    transform: none;
+    border: 0px !important;
+    background-color: #f3f3f3;
+}
+.navbar-nav .dropdown-menu .nav-link{
+  font-size: .88rem;
+}
+.tab-topnav .btn{
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.main-banner {
+  background-position: left !important;
+  padding-right: 5rem;
+}
+.main-banner h1 {
+  font-size: 2.3em;
+}
+.section-hero p.lead {
+  font-size: 1.2rem;
+}
+.search-dropdown ul li .col-desc span {
+  width: 7em;
+  flex: 0 0 12em;
+}
+.registration-container .or {
+  position: static;
+  height: auto;
+  margin: 3rem 0px;
+}
+.registration-container .or::after {
+  content: "";
+  height: auto;
+  position: absolute;
+  width: 100%;
+  background-color: #c5bfbf;
+  height: 1px;
+}
+.registration-container .or span {
+  padding: 0px 20px;
+}
+
+}
+
+@media (min-width:992px){
+   .judgement_ {
+    max-width: 66%;
+  }
+  
+  }
+@media (min-width:992px){
+#judgement{
+  max-width: 66%;
+}
+
+}
+
+@media (min-width:768px){
+  #judgement{
+    max-width: 86%;
+  }
+  
+  }
+@media (max-width:768px){
+  #judgement{
+    max-width: 90%;
+  }
+  .notes-controls .notes{
+    display: none;
+  }
+  .idraf-toogle{
+    cursor: pointer;
+  }
+  .judgment-section .sidebar {
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    left: -300px;
+    transition: all ease-in-out 300ms;
+}
+.judgment-section .sidebar.open-idraf{
+  left: 0px;
+}
+.judgment-section .sidebar ul {
+  position: sticky;
+  top: 0;
+}
+  .back-to-result{
+    display: none;
+  }
+  .judgment-detail-header h1 {
+      font-size: 2.8rem;
+  }
+  .notes-controls {
+      display: none;
+  }
+.notes-section {
+    right: -400px;
+}
+.judgment-wrapper {
+    width: 100%;
+}
+.team-pane .thumbnail {
+    width: calc(50% - 30px);
+}
+.tab-topnav .btn{
+  font-size: .9rem;
+  padding-left: .9rem;
+  padding-right: .9rem
+}
+.navbar .search-filed-box {
+  width: 100%;
+  margin-top: .5rem;
+}
+.navbar-brand img{
+  width: 170px;
+}
+.navbar-brand {
+  order: -1;
+  margin: 0px;
+}
+.feature-content{
+  order: -1;
+}
+.search-dropdown.show{
+  width: calc(100% + 100px);
+}
+.search-tooltip{
+  display: none
+}
+.alert-modal-toggle {
+  top: 331px;
+}
+.tour-link{
+  display: none !important
+}
+.main-banner h1 {
+  font-size: 2.4rem;
+}
+.section-hero p.lead {
+  font-size: 1rem;
+}
+.search-dropdown ul li .col-desc span {
+  width: 7em;
+  flex: 0 0 17em;
+}
+}
+@media (max-width:520px){
+  .search-dropdown ul li .col-desc span {
+    width: 7em;
+    flex: 0 0 11em;
+}
+.case-popup .case-search{
+  flex-wrap: wrap;
+
+}
+.case-popup .case-search .form-control{
+  width: 100%;
+  margin-bottom: 10px;
+}
+}
+@media (max-width:480px){
+  .judgment-detail-header h1 {
+    font-size: 2rem;
+}
+  .navbar .search-filed-box{
+    display: none;
+  }
+  .judgement-topbar small {
+    display: block;
+  }
+  .judgement-topbar .dot-separator{
+    display: none;
+  }
+  .judgment-detail-header h1 {
+    font-size: 2rem;
+}
+.dropdown-menu.popup-tag {
+  display: none !important;
+}
+
+.posts__categories-list>li.post-category {
+    margin-right: .3rem;
+}
+.team-pane .thumbnail {
+    width: calc(100% - 30px);
+}
+}
