@@ -26,6 +26,7 @@ class Routes extends React.Component {
           <Route exact path={"/welcome"} component={Welcome}></Route>
           <Route exact path={"/home"} component={Home}></Route>
           <Route exact path={'/act-list'} component={ActList}></Route>
+          <Route exact path={'/act-detail/:id'} component={ActDetail}></Route>
           <Route
             exact
             path={"/case-detail/:casetext/:cased"}
