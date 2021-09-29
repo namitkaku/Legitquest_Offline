@@ -93,7 +93,7 @@ const actlist = () => {
                                                 data.map((items, index) => {
                                                     return <tr style={style} key={items.Id}>
                                                         <td>{index + 1}</td>
-                                                        <td><a className="act-link" href="">{items.bareacts_name}</a></td>
+                                                        <Link to={"/act-detail/" + items.bareacts_id}><td><a className="act-link" href="">{items.bareacts_name}</a></td></Link>
                                                         <td>{items.bareacts_recordtype}</td>
                                                         <td width="100" className="row-actions"> <a class="btn btn-outline-primary download-btn" href="#">
                                                         Download</a>
