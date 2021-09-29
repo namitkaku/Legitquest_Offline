@@ -12,7 +12,8 @@ const {
   getBenchList,
   getSectionsList,
   getActList,
-  getActListType
+  getActListType,
+  getActDetail
 } = require("./HasMySql");
 const { setLocation } = require("./searhEng/backupLoaction");
 //const { searchTypes } = require("../src/utils/config");
@@ -258,6 +259,11 @@ app.get('/act-list',async (req,res) => {
 
 app.get('/act-list-type/:id',async (req,res) => {
   const result = await getActListType(req.params.id);
+  res.send({'data': result});
+})
+
+app.get('/act-detail/:id', async (req,res) => {
+  const result = await getActDetail(req.params.id);
   res.send({'data': result});
 })
 
