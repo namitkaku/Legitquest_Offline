@@ -238,10 +238,27 @@ app.post("/sections", async (req, res) => {
 
 app.get('/act-list',async (req,res) => {
   // res.send({data:"Response Coming"});
-  res.send({
-    'status' : 200
-  });
+  const  result = await getActList();
+  if(result){
+    res.send({
+      'status' : 200,
+      'data':result
+    });
+  }
+  else
+  {
+    res.send({
+      'status' : 300,
+    });
+  }
+  
+});
+
+app.get('/act-list-type/:id',async (req,res) => {
+  const result = await getActListType(req.params.id);
+  res.send({'data': result});
 })
+
 
 
 app.get("/backup-location", setLocation);
