@@ -7,6 +7,12 @@ import { useAlert } from "react-alert";
 import {Link} from 'react-router-dom';
  
 function SearchForm(props) {
+  const style = {
+    float:'right',
+    marginTop:'11px',
+    marginRight:'27px',
+    padding:'11px'
+  }
   const {
     setSelectedYear$,
     setSelectedState$,
@@ -131,7 +137,7 @@ function SearchForm(props) {
     <MainLayout history={history}>
       <div className="row mt-3">
         <div className="col-md-12">
-          <Link to='/act-list'>
+                  <Link to='/act-list' style={style} className="btn btn-info btn-sm">
             Acts List
           </Link>
           <button
