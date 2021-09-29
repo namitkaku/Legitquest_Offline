@@ -69,7 +69,7 @@ function getDbName(dbPostFix) {
   const databaseName = `${databasePrefix}${MAC}`; */
   if(dbPostFix)
     return `lq_offline_${dbPostFix}`; 
-  return "lq_offline_new"; //"offline_import_test";   ;
+  return "lq_offline_PB_HR"; //"offline_import_test";   ;
 }
 function readData(QUERY, callBack) {
   const connection = getConnection("admin", "admin123", true);
@@ -392,6 +392,49 @@ async function getSectionsList(props) {
   return result;
 }
 
+async function getActList()
+{
+  const connection = getConnection("admin", "admin123", true);
+  const result = await queryRunner("Select * from bareacts_master",connection);
+  // console.log(result);
+  return result;
+}
+
+async function getActListType(value)
+{
+  const connection = getConnection("admin", "admin123", true);
+  if(value == 1)
+  {
+    var typeValue = 'Amendment';
+    const result = await queryRunner(`Select * from bareacts_master where bareacts_recordtype = '${typeValue}'`,connection);
+    return result;
+  }
+  else if(value == 2)
+  {
+    var typeValue = 'Act';
+    const result = await queryRunner(`Select * from bareacts_master where bareacts_recordtype = '${typeValue}'`,connection);
+    return result;
+  }
+  else if(value == 3)
+  {
+    var typeValue = 'Regulations';
+    const result = await queryRunner(`Select * from bareacts_master where bareacts_recordtype = '${typeValue}'`,connection);
+    return result;
+  }
+  else if(value == 4)
+  {
+    var typeValue = 'Rules';
+    const result = await queryRunner(`Select * from bareacts_master where bareacts_recordtype = '${typeValue}'`,connection);
+    return result;
+  }
+  else if(value == 5)
+  {
+    var typeValue = 'Ordinance';
+    const result = await queryRunner(`Select * from bareacts_master where bareacts_recordtype = '${typeValue}'`,connection);
+    return result;
+  }
+}
+
 module.exports = {
   HasMySql,
   createDatabse,
@@ -404,5 +447,7 @@ module.exports = {
   getDataForSelectedTextWithFilters,
   getCourtsList,
   getBenchList,
-  getSectionsList
+  getSectionsList,
+  getActList,
+  getActListType
 };
