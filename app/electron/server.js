@@ -11,6 +11,8 @@ const {
   getCourtsList,
   getBenchList,
   getSectionsList,
+  getActList,
+  getActListType
 } = require("./HasMySql");
 const { setLocation } = require("./searhEng/backupLoaction");
 //const { searchTypes } = require("../src/utils/config");
