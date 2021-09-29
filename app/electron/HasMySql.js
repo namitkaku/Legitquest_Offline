@@ -435,6 +435,13 @@ async function getActListType(value)
   }
 }
 
+async function getActDetail(id)
+{
+    const connection = getConnection("admin", "admin123", true);
+    const result = await queryRunner(`Select * from bareacts where Id = ${id}`,connection);
+    return result;
+}
+
 module.exports = {
   HasMySql,
   createDatabse,
@@ -449,5 +456,7 @@ module.exports = {
   getBenchList,
   getSectionsList,
   getActList,
-  getActListType
+  getActListType,
+  getActDetail
+
 };
