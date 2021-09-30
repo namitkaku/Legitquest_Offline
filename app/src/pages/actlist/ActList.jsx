@@ -14,6 +14,8 @@ const actlist = () => {
     }
     const [data, setData] = useState([]);
     const [loader,setloader] = useState(true);
+    const [acttype,setType] = useState('State Act List');
+    const [action,setAction] = useState(true);
 
     function getSelectValue(event)
     {
@@ -38,6 +40,8 @@ const actlist = () => {
         axios.get('http://localhost:5000/act-list-central').then(response => {
             console.log(response);
             setData(response.data.data);
+            setType('Central Act List');
+            setAction(false);
             setloader(false);
         })
     }
@@ -47,9 +51,11 @@ const actlist = () => {
         axios.get('http://localhost:5000/act-list').then(response => {
             console.log(response);
             setData(response.data.data);
+            setType('State Act List');
+            setAction(true);
             setloader(false);
         })
-    }
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
 
 
     useEffect(() => {
@@ -57,6 +63,7 @@ const actlist = () => {
         axios.get('http://localhost:5000/act-list').then(response => {
             console.log(response.data.data);
             setData(response.data.data);
+            setType('State Act List');
             setloader(false);
         })
     }, [])
@@ -80,9 +87,9 @@ const actlist = () => {
                         </div>
                         <div className="container">
                             <div className="d-flex p-3 flex-wrap case-header">
-                                <h4 className="font-weight-bold mb-3 mb-lg-0 mr-2 ">State Acts List</h4>
+                             <h4 className="font-weight-bold mb-3 mb-lg-0 mr-2 ">{acttype}</h4>
 
-                                <div id="resultStats " className="mb-0 ml-auto">
+                                {action ? <div id="resultStats " className="mb-0 ml-auto">
                                     <span className="d-none d-md-inline-block">Type</span>
                                     <span className="text-muted"> </span>
                                     <select className="sort-by" onChange={getSelectValue}>
@@ -93,7 +100,7 @@ const actlist = () => {
                                         <option value="4">Rules</option>
                                         <option value="5">Ordinance</option>
                                     </select>
-                                </div>
+                                </div> : null}
                                 {/* <div id="resultStats " className="mb-0 ml-4">
                                     <span className="d-none d-md-inline-block">State</span>
                                     <span className="text-muted"> </span>
@@ -124,7 +131,7 @@ const actlist = () => {
                                                         {/* <td>{items.bareacts_id}</td> */}
                                                         <Link to={"/act-detail/" + items.bareacts_id}><td><a className="act-link" href="">{items.bareacts_name}</a></td></Link>
                                                         {/* <td>{items.bareacts_recordtype}</td> */}
-                                                        <td width="100" className="row-actions"> <a style={btnStyle} class="btn btn-outline-primary download-btn" href="#">
+                                                        <td className="row-actions"> <a style={btnStyle} class="btn btn-outline-primary download-btn">
                                                         Download</a>
                                                         </td>
                                                     </tr>
