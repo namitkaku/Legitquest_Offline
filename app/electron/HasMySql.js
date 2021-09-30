@@ -395,7 +395,15 @@ async function getSectionsList(props) {
 async function getActList()
 {
   const connection = getConnection("admin", "admin123", true);
-  const result = await queryRunner("Select * from bareacts_master",connection);
+  const result = await queryRunner("Select * from bareacts_master where bareacts_type NOT LIKE '%CENTRAL%'",connection);
+  // console.log(result);
+  return result;
+}
+
+async function getActListCentral()
+{
+  const connection = getConnection("admin", "admin123", true);
+  const result = await queryRunner("Select * from bareacts_master where bareacts_type LIKE '%CENTRAL%'",connection);
   // console.log(result);
   return result;
 }
@@ -457,6 +465,7 @@ module.exports = {
   getSectionsList,
   getActList,
   getActListType,
-  getActDetail
+  getActDetail,
+  getActListCentral
 
 };
