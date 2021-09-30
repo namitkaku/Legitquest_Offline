@@ -1,10 +1,16 @@
 import MainLayout from "Layout/MainLayout";
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 const actlist = () => {
     const style = {
         backgroundColor:'#fff',
+    }
+    const btnStyle = {
+        padding: '4px 10px 6px 8px',
+        borderRadius:'0px',
+        fontSize:'15px'
     }
     const [data, setData] = useState([]);
     const [loader,setloader] = useState(true);
@@ -26,6 +32,26 @@ const actlist = () => {
         // alert(event.target.value);
 
     }
+
+    function getCentralData()
+    {
+        axios.get('http://localhost:5000/act-list-central').then(response => {
+            console.log(response);
+            setData(response.data.data);
+            setloader(false);
+        })
+    }
+
+    function getWithoutCentralData()
+    {
+        axios.get('http://localhost:5000/act-list').then(response => {
+            console.log(response);
+            setData(response.data.data);
+            setloader(false);
+        })
+    }
+
+
     useEffect(() => {
         // console.log("Hello");
         axios.get('http://localhost:5000/act-list').then(response => {
@@ -44,17 +70,17 @@ const actlist = () => {
                                 <a href=""></a>
                                 <ul className="nav nav-tabs posts__categories-list justify-content-start  flex-row mb-0 border-0" role="tablist">
                                     <li className="post-category nav-item  ">
-                                        <a className="active" data-toggle="tab" role="tab" aria-selected="false">Bare Acts List</a>
+                                        <a className="active" data-toggle="tab" role="tab" aria-selected="false" onClick={getWithoutCentralData}>STATE LIST</a>
                                     </li>
-                                    {/* <li className="post-category">
-                                        <a className="" data-toggle="tab" role="tab" aria-selected="true">Central Acts</a>
-                                    </li> */}
+                                    <li className="post-category">
+                                        <a className="" data-toggle="tab" role="tab" aria-selected="false" onClick={getCentralData}>CENTRAL LIST</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                         <div className="container">
                             <div className="d-flex p-3 flex-wrap case-header">
-                                <h4 className="font-weight-bold mb-3 mb-lg-0 mr-2 ">Bare Acts List</h4>
+                                <h4 className="font-weight-bold mb-3 mb-lg-0 mr-2 ">State Acts List</h4>
 
                                 <div id="resultStats " className="mb-0 ml-auto">
                                     <span className="d-none d-md-inline-block">Type</span>
@@ -68,13 +94,13 @@ const actlist = () => {
                                         <option value="5">Ordinance</option>
                                     </select>
                                 </div>
-                                <div id="resultStats " className="mb-0 ml-4">
+                                {/* <div id="resultStats " className="mb-0 ml-4">
                                     <span className="d-none d-md-inline-block">State</span>
                                     <span className="text-muted"> </span>
                                     <select className="sort-by">
                                         <option value="order_rel">Select</option>
                                     </select>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="container">
@@ -83,19 +109,22 @@ const actlist = () => {
                                     <table className="table table-padded border-0">
                                         <thead>
                                             <th>#</th>
+                                            {/* <th>Bare act Id</th> */}
                                             <th>Act Name</th>
-                                            <th>BareAct Types</th>
+                                            {/* <th>BareAct Types</th> */}
                                             <th>Download PDF</th>
                                         </thead>
-                                        {loader? <div><strong>Loading Please Wait</strong></div> : 
+                                        {loader? <div><strong>Loading Please Wait...</strong></div> : 
                                         <tbody>
                                             {
                                                 data.map((items, index) => {
                                                     return <tr style={style} key={items.Id}>
+                                                       
                                                         <td>{index + 1}</td>
+                                                        {/* <td>{items.bareacts_id}</td> */}
                                                         <Link to={"/act-detail/" + items.bareacts_id}><td><a className="act-link" href="">{items.bareacts_name}</a></td></Link>
-                                                        <td>{items.bareacts_recordtype}</td>
-                                                        <td width="100" className="row-actions"> <a class="btn btn-outline-primary download-btn" href="#">
+                                                        {/* <td>{items.bareacts_recordtype}</td> */}
+                                                        <td width="100" className="row-actions"> <a style={btnStyle} class="btn btn-outline-primary download-btn" href="#">
                                                         Download</a>
                                                         </td>
                                                     </tr>
