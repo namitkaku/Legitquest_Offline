@@ -13,7 +13,8 @@ const {
   getSectionsList,
   getActList,
   getActListType,
-  getActDetail
+  getActDetail,
+  getActListCentral
 } = require("./HasMySql");
 const { setLocation } = require("./searhEng/backupLoaction");
 //const { searchTypes } = require("../src/utils/config");
@@ -242,6 +243,24 @@ app.post("/sections", async (req, res) => {
 app.get('/act-list',async (req,res) => {
   // res.send({data:"Response Coming"});
   const  result = await getActList();
+  if(result){
+    res.send({
+      'status' : 200,
+      'data':result
+    });
+  }
+  else
+  {
+    res.send({
+      'status' : 300,
+    });
+  }
+  
+});
+
+app.get('/act-list-central',async (req,res) => {
+  // res.send({data:"Response Coming"});
+  const  result = await getActListCentral();
   if(result){
     res.send({
       'status' : 200,
